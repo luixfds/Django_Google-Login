@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.contrib import auth
+from django.shortcuts import render, redirect
 
 
 def index(request):
@@ -8,3 +9,7 @@ def index(request):
 def login(request):
     return render(request, 'home/login.html')
 
+
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
