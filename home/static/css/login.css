@@ -1,22 +1,17 @@
 .content{
     width:100%;
     height:94%;
-    background-color: #e0e0e0;
+    background-color: #e6e6e6;
     align-items:center;
     display:flex;
     flex-direction:column;
 }
-.form{
-    width:30%;
-    height:30%;
-    margin: 10%;
-    padding: 2%;
-    border-radius: 20px;
-    justify-content: space-between;
-    align-items:center;
+.grad{
     display:flex;
     flex-direction:column;
-    background-color: white;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: space-between;
 }
 .form > a{
     width: 20%;
@@ -25,4 +20,19 @@
 .form > a > img {
     width: 100%;
     height: 100%;
+}
+.colors {
+   background: linear-gradient(to right,
+      blue 25%,
+      red 25%, red 35%,
+      orange 35%, orange 50%,
+      blue 50%, blue 70%,
+      green 70%, green 83%,
+      red 80%
+    );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+    font-weight: 900;
+    font-family: Arial;
 }
